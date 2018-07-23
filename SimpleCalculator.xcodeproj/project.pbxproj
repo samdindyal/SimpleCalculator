@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		58247E1A2105568200988042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247E192105568200988042 /* AppDelegate.swift */; };
-		58247E1C2105568200988042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247E1B2105568200988042 /* ViewController.swift */; };
 		58247E1F2105568200988042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58247E1D2105568200988042 /* Main.storyboard */; };
 		58247E212105568300988042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58247E202105568300988042 /* Assets.xcassets */; };
 		58247E242105568300988042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58247E222105568300988042 /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		58247E162105568200988042 /* SimpleCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58247E192105568200988042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58247E1B2105568200988042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58247E1E2105568200988042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58247E202105568300988042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58247E232105568300988042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				58247E192105568200988042 /* AppDelegate.swift */,
-				58247E1B2105568200988042 /* ViewController.swift */,
 				58247E1D2105568200988042 /* Main.storyboard */,
 				58247E4721055D4800988042 /* SimpleCalculatorViewController.swift */,
 				58247E202105568300988042 /* Assets.xcassets */,
@@ -259,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58247E1C2105568200988042 /* ViewController.swift in Sources */,
 				58247E4821055D4800988042 /* SimpleCalculatorViewController.swift in Sources */,
 				58247E1A2105568200988042 /* AppDelegate.swift in Sources */,
 			);
