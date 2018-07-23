@@ -14,6 +14,7 @@
 		58247E242105568300988042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58247E222105568300988042 /* LaunchScreen.storyboard */; };
 		58247E2F2105568300988042 /* SimpleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247E2E2105568300988042 /* SimpleCalculatorTests.swift */; };
 		58247E3A2105568300988042 /* SimpleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247E392105568300988042 /* SimpleCalculatorUITests.swift */; };
+		58247E4821055D4800988042 /* SimpleCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58247E4721055D4800988042 /* SimpleCalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		58247E352105568300988042 /* SimpleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58247E392105568300988042 /* SimpleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorUITests.swift; sourceTree = "<group>"; };
 		58247E3B2105568300988042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58247E4721055D4800988042 /* SimpleCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				58247E192105568200988042 /* AppDelegate.swift */,
 				58247E1B2105568200988042 /* ViewController.swift */,
 				58247E1D2105568200988042 /* Main.storyboard */,
+				58247E4721055D4800988042 /* SimpleCalculatorViewController.swift */,
 				58247E202105568300988042 /* Assets.xcassets */,
 				58247E222105568300988042 /* LaunchScreen.storyboard */,
 				58247E252105568300988042 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58247E1C2105568200988042 /* ViewController.swift in Sources */,
+				58247E4821055D4800988042 /* SimpleCalculatorViewController.swift in Sources */,
 				58247E1A2105568200988042 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
