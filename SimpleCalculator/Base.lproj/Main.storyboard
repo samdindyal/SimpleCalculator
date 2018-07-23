@@ -27,7 +27,7 @@
                                         <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-vk-k8Q">
+                                    <segmentedControl opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-vk-k8Q">
                                         <rect key="frame" x="0.0" y="41" width="375" height="29"/>
                                         <segments>
                                             <segment title="+"/>
@@ -58,7 +58,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13922846502590669" green="0.13922846502590669" blue="0.13922846502590669" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.28930537560000003" green="0.28930537560000003" blue="0.28930537560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.93181606250000004" green="0.91170751400000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ykq-gH-6KW" secondAttribute="bottom" id="9gI-2d-rkn"/>
                             <constraint firstItem="Ykq-gH-6KW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cvP-JR-z3Y"/>
