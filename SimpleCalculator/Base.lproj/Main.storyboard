@@ -32,6 +32,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="fieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="c6K-pp-SD6"/>
+                                        </connections>
                                     </textField>
                                     <segmentedControl opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-vk-k8Q">
                                         <rect key="frame" x="0.0" y="311" width="375" height="29"/>
@@ -51,6 +54,9 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <action selector="fieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="7gk-Wl-IZf"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="= 0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qa-U9-kg1">
                                         <rect key="frame" x="0.0" y="380.33333333333331" width="375" height="40.666666666666686"/>

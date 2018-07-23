@@ -27,6 +27,15 @@ class SimpleCalculatorViewController: UIViewController {
         }
     }
     
+    @IBAction func fieldChanged(_ textField: UITextField) {
+        // Calculate the new result and set the result field
+        if calculate().isNaN {
+            zLabel.text = "= ???"
+        } else {
+            zLabel.text = "= \(self.zValue)"
+        }
+    }
+    
     var xValue:Float = 0.0
     var yValue:Float = 0.0
     var zValue:Float = 0.0
