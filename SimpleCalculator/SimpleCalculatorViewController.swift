@@ -10,32 +10,66 @@ import UIKit
 
 class SimpleCalculatorViewController: UIViewController {
     
-    @IBOutlet var xLabel: UILabel!
-    @IBOutlet var yLabel: UILabel!
+    @IBOutlet var xField: UITextField!
+    @IBOutlet var yField: UITextField!
     @IBOutlet var zLabel: UILabel!
     
     @IBAction func changeOperation(_ sender: UISegmentedControl) {
-        let operation = sender.titleForSegment(at: sender.selectedSegmentIndex)!
-        let z = operations[operation]?(1, 2)
-        print(z!)
+        
+        // Get the new operation key
+        self.operationKey = sender.titleForSegment(at: sender.selectedSegmentIndex)!
+        
+        // Calculate the new result and set the result field
+        if calculate().isNaN {
+         zLabel.text = "= ???"
+        } else {
+            zLabel.text = "= \(self.zValue)"
+        }
     }
     
-    let operations: [String:((Int, Int) -> Int)] = [
+    var xValue:Float = 0.0
+    var yValue:Float = 0.0
+    var zValue:Float = 0.0
+    var operationKey:String = "+"
+    
+    let operations: [String:(Float, Float) -> Float] = [
         "+": {
-                (x, y) -> Int in
+                (x, y) -> Float in
                     return x + y
             },
         "-": {
-                (x, y) -> Int in
+                (x, y) -> Float in
                     return x - y
             },
         "x": {
-                (x, y) -> Int in
+                (x, y) -> Float in
                     return x * y
         },
         "÷": {
-                (x, y) -> Int in
+                (x, y) -> Float in
                     return x / y
             }
     ]
+    
+    func fetchValues() -> Bool {
+        if let x = Float(xField.text!),
+            let y = Float(yField.text!) {
+            self.xValue = x
+            self.yValue = y
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    @discardableResult func calculate() -> Float {
+        if fetchValues() {
+            let operation = operations[self.operationKey]!
+            self.zValue = operation(xValue, yValue)
+            return self.zValue
+        } else {
+            return Float.nan
+        }
+        
+    }
 }
