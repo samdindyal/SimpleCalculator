@@ -13,7 +13,7 @@
         <!--Simple Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Simple Calculator" id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Simple Calculator" id="BYZ-38-t0r" customClass="SimpleCalculatorViewController" customModule="SimpleCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,19 +22,19 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tty-SH-HaO">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="175.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="247.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdN-0u-Dl1">
-                                        <rect key="frame" x="0.0" y="175.33333333333331" width="375" height="72.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="247.33333333333329" width="375" height="41.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" verticalHuggingPriority="252" layoutMarginsFollowReadableWidth="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zHC-vk-k8Q">
-                                        <rect key="frame" x="0.0" y="247.66666666666669" width="375" height="51"/>
+                                        <rect key="frame" x="0.0" y="289" width="375" height="29.666666666666686"/>
                                         <segments>
                                             <segment title="+"/>
                                             <segment title="-"/>
@@ -42,27 +42,30 @@
                                             <segment title="÷"/>
                                         </segments>
                                         <color key="tintColor" red="0.93181606246283932" green="0.91170751396554217" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="changeOperation:" destination="BYZ-38-t0r" eventType="valueChanged" id="IB0-rb-1ZA"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdk-p4-H0e">
-                                        <rect key="frame" x="0.0" y="297.66666666666669" width="375" height="72.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="317.66666666666669" width="375" height="41.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-Oq-eBA">
-                                        <rect key="frame" x="0.0" y="370" width="375" height="72.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="359.33333333333331" width="375" height="41.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qa-U9-kg1">
-                                        <rect key="frame" x="0.0" y="442.33333333333337" width="375" height="72.333333333333371"/>
+                                        <rect key="frame" x="0.0" y="401" width="375" height="41.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <color key="textColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXZ-cM-t5w">
-                                        <rect key="frame" x="0.0" y="514.66666666666663" width="375" height="175.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="442.66666666666657" width="375" height="247.33333333333331"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -81,6 +84,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="xLabel" destination="IdN-0u-Dl1" id="1Ky-Ny-OZs"/>
+                        <outlet property="yLabel" destination="Xdk-p4-H0e" id="hYv-5D-npF"/>
+                        <outlet property="zLabel" destination="0Qa-U9-kg1" id="2OW-rR-J5t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
